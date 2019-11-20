@@ -46,5 +46,7 @@ fun main() {
     println(nickname?.toUpperCase())
     nickname = nickName("William")
     println(nickname?.toUpperCase())
+
+    println(Util.numberOfProcessors())
 }
 
