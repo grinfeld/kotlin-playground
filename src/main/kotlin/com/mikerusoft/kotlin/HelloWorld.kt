@@ -1,6 +1,8 @@
 package com.mikerusoft.kotlin
 
+import com.mikerusoft.kotlin.Temperature.c2f
 import java.lang.StringBuilder
+import kotlin.math.roundToLong
 
 fun main() {
     println("Hello World")
@@ -48,5 +50,9 @@ fun main() {
     println(nickname?.toUpperCase())
 
     println(Util.numberOfProcessors())
+
+    println(unitsSupported())
+    println("" + Temperature.f2c(75.23).roundToLong() + " C")
+    println("" + c2f(24.305).roundToLong() + " F")
 }
 
