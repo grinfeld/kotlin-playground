@@ -34,5 +34,17 @@ fun main() {
 
     println(output)
     println(disclaimer)
+
+    fun nickName(name: String): String? {
+        if (name == "William") {
+            return "Bill"
+        }
+        return null;
+    }
+
+    var nickname:String? = nickName("Mike")
+    println(nickname?.toUpperCase())
+    nickname = nickName("William")
+    println(nickname?.toUpperCase())
 }
 
