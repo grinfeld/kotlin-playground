@@ -54,5 +54,10 @@ fun main() {
     println(unitsSupported())
     println("" + Temperature.f2c(75.23).roundToLong() + " C")
     println("" + c2f(24.305).roundToLong() + " F")
+
+    val machineOperator: MachineOperator = MachineOperator("Mater")
+    machineOperator.checkin()
+    println(MachineOperator.minimumBreak())
+    println(MachineOperator.checkedIn)
 }
 
