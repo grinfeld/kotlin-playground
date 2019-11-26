@@ -92,4 +92,10 @@ fun main() {
 
     roe3.work() //...write Java...
     roe3.meeting()//organizing meeting with JavaProgrammer
+
+    val doe4 = Manager4(CSharpProgrammer(), DepartmentAssistant())
+    doe4.work()          //...write C#...
+    doe4.takeVacation()  //of course
+    doe4.doChores()      //routine stuff
+    doe4.fileTimeSheet() //manually forwarding this...No escape from that
 }
