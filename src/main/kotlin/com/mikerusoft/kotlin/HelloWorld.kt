@@ -59,5 +59,14 @@ fun main() {
     machineOperator.checkin()
     println(MachineOperator.minimumBreak())
     println(MachineOperator.checkedIn)
-}
 
+
+    val tv = TV()
+    val remote = tv.remote
+
+    println("$tv") //Volume: 0
+    remote.up()
+    println("After increasing: $tv") //After increasing: Volume: 1
+    remote.doubleUp()
+    println("After doubleUp: $tv") //After doubleUp: Volume: 3
+}
