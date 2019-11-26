@@ -80,4 +80,16 @@ fun main() {
     doe1 = Manager1(CSharpProgrammer())
     doe1.work()
     doe1.takeVacation()
+
+    val doe2 = Manager2()
+    doe2.work()
+
+    val doe3 = Manager3(CSharpProgrammer())
+    val roe3 = Manager3(JavaProgrammer())
+
+    doe3.work() //...write C#...
+    doe3.meeting()//organizing meeting with CSharpProgrammer
+
+    roe3.work() //...write Java...
+    roe3.meeting()//organizing meeting with JavaProgrammer
 }
