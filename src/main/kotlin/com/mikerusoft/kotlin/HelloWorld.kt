@@ -69,4 +69,15 @@ fun main() {
     println("After increasing: $tv") //After increasing: Volume: 1
     remote.doubleUp()
     println("After doubleUp: $tv") //After doubleUp: Volume: 3
+
+    val doe = Manager()
+    doe.work()
+
+    var doe1 = Manager1(JavaProgrammer())
+    doe1.work()
+    doe1.takeVacation()
+
+    doe1 = Manager1(CSharpProgrammer())
+    doe1.work()
+    doe1.takeVacation()
 }
