@@ -98,4 +98,22 @@ fun main() {
     doe4.takeVacation()  //of course
     doe4.doChores()      //routine stuff
     doe4.fileTimeSheet() //manually forwarding this...No escape from that
+
+    var comment: String by PoliteString("Something to do")
+    println(comment)
+
+    comment = "This is stupid"
+    println(comment)
+
+    println("comment is of length: ${comment.length}")
+
+
+
+    var comment1: String by beingpolite("Stupid form")
+    println(comment1)
+
+    comment1 = "A long crazy day"
+    println(comment1)
 }
+
+fun beingpolite(content: String) = PoliteString(content)
