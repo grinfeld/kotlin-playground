@@ -7,7 +7,7 @@ class MachineOperator(val name: String) {
 
     companion object MachineOperatorFactory {
         var checkedIn = 0
-
+            private set
         fun minimumBreak() = "$checkedIn -> 15 minutes every 2 hours"
     }
 }

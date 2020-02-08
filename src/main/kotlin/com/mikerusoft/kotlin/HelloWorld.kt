@@ -55,11 +55,15 @@ fun main() {
     println("" + Temperature.f2c(75.23).roundToLong() + " C")
     println("" + c2f(24.305).roundToLong() + " F")
 
+    // defines inner singleton which is are accessible statically
     val machineOperator: MachineOperator = MachineOperator("Mater")
     machineOperator.checkin()
-    println(MachineOperator.minimumBreak())
+    println(MachineOperator.minimumBreak()) // defines "like" static method (it's not real Java static under hood)
     println(MachineOperator.checkedIn)
 
+    val machineOperator1: MachineOperator = MachineOperator("Mater1")
+    machineOperator1.checkin()
+    println(MachineOperator.checkedIn)
 
     val tv = TV()
     val remote = tv.remote
@@ -114,6 +118,8 @@ fun main() {
 
     comment1 = "A long crazy day"
     println(comment1)
+
+    val car = Car(2019, "pink")
 }
 
 fun beingpolite(content: String) = PoliteString(content)
