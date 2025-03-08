@@ -2,6 +2,7 @@ package com.mikerusoft.kotlin
 
 import com.mikerusoft.kotlin.Temperature.c2f
 import java.lang.StringBuilder
+import java.util.*
 import kotlin.math.roundToLong
 
 fun main() {
@@ -45,9 +46,9 @@ fun main() {
     }
 
     var nickname:String? = nickName("Mike")
-    println(nickname?.toUpperCase())
+    println(nickname?.uppercase())
     nickname = nickName("William")
-    println(nickname?.toUpperCase())
+    println(nickname?.uppercase())
 
     println(Util.numberOfProcessors())
 
