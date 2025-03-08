@@ -1,4 +1,4 @@
-package com.mikersuoft.kotlin
+package com.mikerusoft.kotlin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
